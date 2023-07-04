@@ -168,7 +168,8 @@ public class loginactivity1 extends AppCompatActivity implements View.OnClickLis
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        finish();
+                        finishAffinity(); // Finish all activities in the task, including the current one
+                        System.exit(0);
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
