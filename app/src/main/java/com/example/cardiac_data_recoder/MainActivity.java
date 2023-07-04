@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         //makefullscreen app
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         //animation
          topAnim= AnimationUtils.loadAnimation(this,R.anim.top_animation);
          bottomAnim=AnimationUtils.loadAnimation(this,R.anim.bottom_animation);

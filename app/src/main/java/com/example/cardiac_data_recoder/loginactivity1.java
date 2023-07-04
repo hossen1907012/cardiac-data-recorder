@@ -45,6 +45,7 @@ public class loginactivity1 extends AppCompatActivity implements View.OnClickLis
         signup.setOnClickListener(this);
         forgetpass.setOnClickListener(this);
 
+
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,6 +85,9 @@ public class loginactivity1 extends AppCompatActivity implements View.OnClickLis
             case R.id.forgotpassword1:
                 forgotpass();
                 break;
+
+
+
         }
     }
 
@@ -92,6 +96,7 @@ public class loginactivity1 extends AppCompatActivity implements View.OnClickLis
         Toast.makeText(loginactivity1.this, "Redirecting to Sign Up Page", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(getApplicationContext(),RegisterActivity.class));
     }
+
 
     private void forgotpass()
     {
