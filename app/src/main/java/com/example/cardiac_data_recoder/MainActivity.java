@@ -46,11 +46,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void  run()
             {
-                Intent intent = new Intent(MainActivity.this, OtherActivity.class);
+                Intent intent = new Intent(MainActivity.this, loginactivity1.class);
                 startActivity(intent);
                 finish();
             }
-        },SPLASH_SCREEN);
+        },3500);
 
 
 
