@@ -1,8 +1,10 @@
 package com.example.cardiac_data_recoder;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -157,8 +159,26 @@ public class loginactivity1 extends AppCompatActivity implements View.OnClickLis
 
     }
 
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder= new AlertDialog.Builder(loginactivity1.this);
+        builder.setTitle(R.string.app_name);
+        builder.setIcon(R.mipmap.ic_launcher);
+        builder.setMessage("Do you want to exit?").setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
 
-
-
-
+        AlertDialog alertDialog= builder.create();
+        alertDialog.show();
+    }
 }
