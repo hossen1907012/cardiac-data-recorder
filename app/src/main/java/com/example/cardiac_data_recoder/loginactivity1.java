@@ -84,6 +84,8 @@ public class loginactivity1 extends AppCompatActivity implements View.OnClickLis
             case R.id.forgotpassword1:
                 forgotpass();
                 break;
+
+
         }
     }
 
