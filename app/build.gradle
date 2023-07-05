@@ -53,4 +53,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
     implementation 'com.google.android.gms:play-services-auth:20.6.0'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.6.1'
 }
