@@ -11,6 +11,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
+import com.example.cardiac_data_recoder.auth.loginactivity1;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -59,13 +60,11 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 }else{
-                    Log.i("LOGGING___", user.getEmail());
-
-                    Intent intent = new Intent(MainActivity.this, InsertReportActivity.class);
+                    Intent intent = new Intent(MainActivity.this, DataViewerActivity.class);
                     startActivity(intent);
                     finish();
                 }
             }
-        },3500);
+        },0);
     }
 }
