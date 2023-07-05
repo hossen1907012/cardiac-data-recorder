@@ -50,7 +50,7 @@ public class UiTest {
         onView(withId(R.id.signupemail1)).perform(ViewActions.typeText("turjo.chinmoymodak01@gmail.com"));
         onView(withId(R.id.signuppassword2)).perform(ViewActions.typeText("1234Turjo@"));
         onView(withId(R.id.login1)).perform(click());
-        
+
 
         try {
             Thread.sleep(4000); // Adjust the delay as needed

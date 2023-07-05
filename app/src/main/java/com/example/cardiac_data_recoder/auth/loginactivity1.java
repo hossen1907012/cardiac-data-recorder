@@ -1,4 +1,4 @@
-package com.example.cardiac_data_recoder;
+package com.example.cardiac_data_recoder.auth;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -15,6 +15,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.cardiac_data_recoder.DataViewerActivity;
+import com.example.cardiac_data_recoder.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -143,7 +145,7 @@ public class loginactivity1 extends AppCompatActivity implements View.OnClickLis
                 if(task.isSuccessful())
                 {
                     Toast.makeText(loginactivity1.this, "Logged In Successfully", Toast.LENGTH_SHORT).show();
-                    Intent intent =new Intent(getApplicationContext(),DetailsActivity.class);
+                    Intent intent =new Intent(getApplicationContext(), DataViewerActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 }
