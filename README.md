@@ -1,5 +1,7 @@
 
 # Cardiac Data Recoder
 
-A brief description of what this project does and who it's for
 
+## Project Title Description
+
+Cardiac data Recoder is your daily companion .If you are feeling sick.
