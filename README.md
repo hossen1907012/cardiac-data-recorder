@@ -8,13 +8,13 @@ Cardiac Data Recorder is a user-friendly mobile application that enables users t
 
 <div style="display: flex; justify-content: space-around;">
     <div style="flex: 1; text-align: center;">
-        <img src="[path/to/picture1.jpg](https://www.facebook.com/photo/?fbid=1256351168302986&set=a.102910473647067)" alt="Division 1 Picture" width="200">
+      
         <p><strong>Name:</strong> John Doe</p>
         <p><strong>Roll:</strong> 123456789</p>
         <p><strong>GitHub:</strong> <a href="https://github.com/JohnDoe">JohnDoe</a></p>
     </div>
     <div style="flex: 1; text-align: center;">
-        <img src="path/to/picture2.jpg" alt="Division 2 Picture" width="200">
+        
         <p><strong>Name:</strong> Jane Smith</p>
         <p><strong>Roll:</strong> 987654321</p>
         <p><strong>GitHub:</strong> <a href="https://github.com/JaneSmith">JaneSmith</a></p>
