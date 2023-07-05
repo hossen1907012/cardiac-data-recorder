@@ -23,7 +23,7 @@ import org.junit.runners.JUnit4;
 public class LoginUITest {
 
     @Rule
-    public ActivityScenarioRule<loginactivity1> loginactivityrule = new ActivityScenarioRule<>(com.example.cardiac_data_recoder.auth.loginactivity1.class);
+    public ActivityScenarioRule<com.example.cardiac_data_recoder.auth.loginactivity1> loginactivityrule = new ActivityScenarioRule<>(com.example.cardiac_data_recoder.auth.loginactivity1.class);
     @Test
     public void testlogin()
     {

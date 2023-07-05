@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:text="120/80"
                 android:textColor="#000000"
-                android:textSize="12sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -42,7 +42,7 @@
                 android:shadowColor="#000000"
                 android:text="mmHg"
                 android:textColor="#272727"
-                android:textSize="10sp" />
+                android:textSize="15sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -53,8 +53,8 @@
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="10dp"
-                android:layout_height="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_marginTop="3dp"
                 android:layout_marginRight="3dp"
                 android:layout_weight="1"
@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:text="89"
                 android:textColor="#000000"
-                android:textSize="12sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -79,7 +79,7 @@
                 android:shadowColor="#000000"
                 android:text="bmp"
                 android:textColor="#272727"
-                android:textSize="10sp" />
+                android:textSize="15sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -96,7 +96,7 @@
                 android:freezesText="false"
                 android:text="12 /Jan/2023   -   10:15"
                 android:textColor="#000000"
-                android:textSize="12sp" />
+                android:textSize="15sp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
