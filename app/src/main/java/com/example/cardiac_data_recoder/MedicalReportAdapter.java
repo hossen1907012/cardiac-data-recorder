@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.annotation.SuppressLint;
 import android.content.Context;
 
+import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -97,6 +98,10 @@ public class MedicalReportAdapter extends RecyclerView.Adapter<MedicalReportAdap
         holder.bp_viewer.setText(medicalReportModel.getSystolic() + "/" + medicalReportModel.getDiastolic());
         holder.hr_viewer.setText(medicalReportModel.getHeartRate());
         holder.datetime_viewer.setText(medicalReportModel.getDate() + "  -  "+ medicalReportModel.getTime());
+
+        if(Integer.parseInt(medicalReportModel.getSystolic()) > 140 || Integer.parseInt(medicalReportModel.getSystolic()) < 90 || Integer.parseInt(medicalReportModel.getDiastolic()) < 60 || Integer.parseInt(medicalReportModel.getDiastolic()) > 90){
+            holder.bp_viewer.setTextColor(Color.rgb(255, 20,20));
+        }
 
         data[0] = medicalReportModel.getDate();
         data[1] = medicalReportModel.getTime();
