@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void  run()
             {
-                Intent intent = new Intent(MainActivity.this, OtherActivity.class);
+                Intent intent = new Intent(MainActivity.this, InsertReportActivity.class);
                 startActivity(intent);
                 finish();
             }
