@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CardiacDataRecoder"
+<<<<<<< HEAD
         tools:targetApi="31" >
         <activity
             android:name=".DataViewerActivity"
@@ -21,13 +22,51 @@
         <activity
             android:name=".OtherActivity"
             android:exported="false" >
+=======
+        tools:targetApi="31">
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".loginactivity1"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".forgotpassword"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OtherActivity"
+            android:exported="false">
+>>>>>>> e870839395fbe06e1de74e17fe425ef656d1e533
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".MainActivity"
+<<<<<<< HEAD
             android:exported="true" >
+=======
+            android:exported="true">
+>>>>>>> e870839395fbe06e1de74e17fe425ef656d1e533
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

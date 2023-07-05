@@ -5,10 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import pl.droidsonroids.gif.GifImageView;
 
@@ -18,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     Animation topAnim,bottomAnim;
 
+    FirebaseAuth mAuth;
     GifImageView imageView;
     TextView headline, details;
 
@@ -27,8 +32,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mAuth = FirebaseAuth.getInstance();
         //makefullscreen app
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         //animation
          topAnim= AnimationUtils.loadAnimation(this,R.anim.top_animation);
          bottomAnim=AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
@@ -46,15 +53,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void  run()
             {
-                Intent intent = new Intent(MainActivity.this, InsertReportActivity.class);
-                startActivity(intent);
-                finish();
+                FirebaseUser user = mAuth.getCurrentUser();
+                if (user == null){
+                    Intent intent=new Intent(MainActivity.this, loginactivity1.class);
+                    startActivity(intent);
+                    finish();
+                }else{
+                    Log.i("LOGGING___", user.getEmail());
+
+                    Intent intent = new Intent(MainActivity.this, InsertReportActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
-        },SPLASH_SCREEN);
-
-
-
-
-
+        },3500);
     }
 }
