@@ -119,6 +119,13 @@ The purpose of this project is to showcase the implementation of software engine
 * [Unit Test]()
 * [UI Test]()
 
+## Story Board Sequences
+
+![image](https://github.com/hossen1907012/cardiac-data-recorder/assets/67799082/c3636c30-4a41-448d-b214-36c5d1c06e9a)
+
+
+
+
 
 
 
