@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/registerScreen"
     android:background="@drawable/loginbg1"
-    tools:context=".RegisterActivity">
+    tools:context=".auth.RegisterActivity">
 
 
     <EditText
