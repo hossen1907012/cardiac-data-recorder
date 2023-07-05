@@ -22,6 +22,9 @@ public class UiTest {
 
     @Rule
     public ActivityScenarioRule<MainActivity> activityRule = new ActivityScenarioRule<>(MainActivity.class);
+    public ActivityScenarioRule<com.example.cardiac_data_recoder.auth.loginactivity1> loginactivityrule = new ActivityScenarioRule<>(com.example.cardiac_data_recoder.auth.loginactivity1.class);
+
+
 
 
 
@@ -58,11 +61,11 @@ public class UiTest {
             e.printStackTrace();
         }
 
-        onView(withId(R.id.add_note_btn)).check(matches(isDisplayed()));
-
-
+        onView(withId(R.id.redirect_to_add_data)).check(matches(isDisplayed()));
 
 
     }
+
+
 
 }
