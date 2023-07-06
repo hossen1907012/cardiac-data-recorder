@@ -7,6 +7,10 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
+
+/**
+ * This are all the methods to test whether this app pass unit test or not
+ */
 public class ApplicationUnitTesting {
 
 
@@ -25,7 +29,7 @@ public class ApplicationUnitTesting {
 
         MedicalReportModel data2 = new MedicalReportModel(curr_date, curr_time, "122", "71", "98", "Heart rate is not fine");
         dataList.addData(data2);
-        assertEquals(2, dataList.getData().size());
+        assertEquals(2, dataList.getData().size());//equal or not checking
 
         assertTrue(dataList.getData().contains(data1));
         assertTrue(dataList.getData().contains(data2));
@@ -84,6 +88,6 @@ public class ApplicationUnitTesting {
 
         dataList.deleteData(data1);
 
-        assertThrows(IllegalArgumentException.class, () -> dataList.deleteData(data1));
+        assertThrows(IllegalArgumentException.class, () -> dataList.deleteData(data1));//exception handled
     }
 }

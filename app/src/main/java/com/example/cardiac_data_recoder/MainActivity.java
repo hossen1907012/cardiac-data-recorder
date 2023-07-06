@@ -17,6 +17,9 @@ import com.google.firebase.auth.FirebaseUser;
 
 import pl.droidsonroids.gif.GifImageView;
 
+/**
+ * For Splash Screen and relevent animation
+ */
 public class MainActivity extends AppCompatActivity {
 
     private static int SPLASH_SCREEN=3500;

@@ -146,7 +146,13 @@ public class MedicalReportAdapter extends RecyclerView.Adapter<MedicalReportAdap
     }
 
 
+    /**
+     * This method is used to receive item count
+     * @return
+     */
+
     @Override
+
     public int getItemCount() {
         return allReports.size();
     }

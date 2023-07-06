@@ -16,6 +16,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
+/**
+ * Forget Password Functionality Done Here
+ */
 public class forgotpassword extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
@@ -34,7 +37,7 @@ public class forgotpassword extends AppCompatActivity {
 
 
 
-
+        //when reset button is pressed
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,13 +48,14 @@ public class forgotpassword extends AppCompatActivity {
                     email.requestFocus();
                     return;
                 }
-                if(!Patterns.EMAIL_ADDRESS.matcher(checkmail).matches())
+                if(!Patterns.EMAIL_ADDRESS.matcher(checkmail).matches())//email address validation
                 {
                     email.setError("Enter a Valid Email Address");
                     email.requestFocus();
                     return;
                 }
 
+                //Check database for resetting password
                 mAuth.sendPasswordResetEmail(checkmail).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
@@ -63,6 +67,7 @@ public class forgotpassword extends AppCompatActivity {
                         }
                         else
                         {
+                            //Toaster Message
                             Toast.makeText(forgotpassword.this, "Error: "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
                         }

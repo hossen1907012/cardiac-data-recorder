@@ -20,6 +20,12 @@ import org.junit.runners.JUnit4;
 
 @RunWith(JUnit4.class)
 
+
+/**
+ * This is a test method for checking user-interface login feature
+ * This will check after successful validation it will redirect to
+ * activity page
+ */
 public class LoginUITest {
 
     @Rule
@@ -34,7 +40,7 @@ public class LoginUITest {
         }
 
 
-        onView(withId(R.id.loginscreen)).check(matches(isDisplayed()));
+        onView(withId(R.id.loginscreen)).check(matches(isDisplayed()));//display matching with id checked
 
         onView(withId(R.id.signupemail1)).perform(ViewActions.typeText("turjo.chinmoymodak01@gmail.com"));
         onView(withId(R.id.signuppassword2)).perform(ViewActions.typeText("1234Turjo@"));

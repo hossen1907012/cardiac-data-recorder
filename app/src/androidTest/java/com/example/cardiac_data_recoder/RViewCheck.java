@@ -24,6 +24,9 @@ public class RViewCheck {
     public ActivityScenarioRule<DataViewerActivity> activityRule = new ActivityScenarioRule<>(DataViewerActivity.class);
 
     @Test
+    /**
+     * This method is used to check a creation of data and save it the database
+     */
     public void UiTest() {
 
 
@@ -45,7 +48,7 @@ public class RViewCheck {
         onView(withId(R.id.systolic_pressure)).perform(ViewActions.typeText("100"));
         onView(withId(R.id.diastolic_pressure)).perform(ViewActions.typeText("100"));
         onView(withId(R.id.heart_rate)).perform(ViewActions.typeText("100"));
-        onView(withId(R.id.comment)).perform(ViewActions.typeText("I'm Perfect!"));
+        onView(withId(R.id.comment)).perform(ViewActions.typeText("I'm Perfect!"));//writing comment I'am perfect
 
         Espresso.pressBack();
         onView(withId(R.id.add_new_record)).perform(click());
@@ -56,7 +59,7 @@ public class RViewCheck {
             e.printStackTrace();
         }
 
-        onView(withId(R.id.cardiac_report_view)).check(matches(isDisplayed()));
+        onView(withId(R.id.cardiac_report_view)).check(matches(isDisplayed()));//activity layout id checked/matched
 
 
     }
