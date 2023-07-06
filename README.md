@@ -113,13 +113,13 @@ The purpose of this project is to showcase the implementation of software engine
 ![exit alert dialog](https://github.com/hossen1907012/cardiac-data-recorder/assets/67799082/b3fd7b9f-643c-40cc-aa41-a7bf1649a1f0)
 
 
-<<<<<<< HEAD
+
 ## Project Video
 
 * [App Demo](https://drive.google.com/file/d/1t6D5rIxQStJ5_Pz28TPzTAuDOxtdq5aP/view?usp=drive_link)
 * [Unit Test](https://drive.google.com/file/d/1EzyL3RoxIvcRaPzRsH672ybNfu-h9RF5/view?usp=sharing)
 * [UI Test](https://drive.google.com/file/d/1r6XsmQvWpu2np0-xbBY_Ug5TkRi-M32G/view?usp=sharing)
-=======
+
 ## Videos
 
 * [App Demo](https://drive.google.com/file/d/1t6D5rIxQStJ5_Pz28TPzTAuDOxtdq5aP/view?usp=drive_link)
@@ -132,7 +132,7 @@ The purpose of this project is to showcase the implementation of software engine
 
 
 
->>>>>>> 898cbf8465d9eb4b1bb0162e08a0a964f54db82b
+
 
 ## Story Boarding
 
