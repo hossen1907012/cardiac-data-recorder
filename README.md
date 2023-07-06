@@ -120,12 +120,6 @@ The purpose of this project is to showcase the implementation of software engine
 * [Unit Test](https://drive.google.com/file/d/1EzyL3RoxIvcRaPzRsH672ybNfu-h9RF5/view?usp=sharing)
 * [UI Test](https://drive.google.com/file/d/1r6XsmQvWpu2np0-xbBY_Ug5TkRi-M32G/view?usp=sharing)
 
-## Videos
-
-* [App Demo](https://drive.google.com/file/d/1t6D5rIxQStJ5_Pz28TPzTAuDOxtdq5aP/view?usp=drive_link)
-* [Unit Test]()
-* [UI Test]()
-
 ## Story Board Sequences
 
 ![image](https://github.com/hossen1907012/cardiac-data-recorder/assets/67799082/c3636c30-4a41-448d-b214-36c5d1c06e9a)
