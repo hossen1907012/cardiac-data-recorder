@@ -134,12 +134,6 @@ The purpose of this project is to showcase the implementation of software engine
 
 
 
-## Story Boarding
-
-![storyboard telling](https://github.com/hossen1907012/cardiac-data-recorder/assets/67799082/0881cb0b-ad93-41d5-b239-3a6b8af64f64)
-
-
-
 
 
 
