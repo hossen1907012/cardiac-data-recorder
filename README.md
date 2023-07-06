@@ -119,6 +119,11 @@ The purpose of this project is to showcase the implementation of software engine
 * [Unit Test](https://drive.google.com/file/d/1EzyL3RoxIvcRaPzRsH672ybNfu-h9RF5/view?usp=sharing)
 * [UI Test](https://drive.google.com/file/d/1r6XsmQvWpu2np0-xbBY_Ug5TkRi-M32G/view?usp=sharing)
 
+## Story Boarding
+
+![storyboard telling](https://github.com/hossen1907012/cardiac-data-recorder/assets/67799082/0881cb0b-ad93-41d5-b239-3a6b8af64f64)
+
+
 
 
 
