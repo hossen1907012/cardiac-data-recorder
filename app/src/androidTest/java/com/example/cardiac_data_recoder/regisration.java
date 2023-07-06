@@ -27,14 +27,18 @@ public class regisration {
     @Rule
     public ActivityScenarioRule<com.example.cardiac_data_recoder.auth.loginactivity1> loginactivityrule = new ActivityScenarioRule<>(com.example.cardiac_data_recoder.auth.loginactivity1.class);
     @Test
+    /**
+     * This a checking test method for user-interface functionality
+     * It is used for checking new user registation
+     */
     public void Uitest()
     {
 
-        onView(withId(R.id.emailField)).perform(ViewActions.typeText("turjo.chinmoymodak02@gmail.com"));
+        onView(withId(R.id.emailField)).perform(ViewActions.typeText("turjo.chinmoymodak02@gmail.com"));//writing text to desired field
         onView(withId(R.id.passwordField)).perform(ViewActions.typeText("1234Turjo@"));
-        onView(withId(R.id.confirmPasswordField)).perform(ViewActions.typeText("1234Turjo@"));
+        onView(withId(R.id.confirmPasswordField)).perform(ViewActions.typeText("1234Turjo@"));//writing password field
 
-        Espresso.pressBack();
+        Espresso.pressBack();//phone back button pressed
         onView(withId(R.id.register)).perform(click());
 
         try {
@@ -51,7 +55,7 @@ public class regisration {
         onView(withId(R.id.signupemail1)).perform(ViewActions.typeText("turjo.chinmoymodak02@gmail.com"));
         onView(withId(R.id.signuppassword2)).perform(ViewActions.typeText("1234Turjo@"));
         Espresso.pressBack();
-        onView(withId(R.id.login1)).perform(click());
+        onView(withId(R.id.login1)).perform(click());//pressing register button
 
 
         try {
@@ -60,7 +64,7 @@ public class regisration {
             e.printStackTrace();
         }
 
-        onView(withId(R.id.cardiac_report_view)).check(matches(isDisplayed()));
+        onView(withId(R.id.cardiac_report_view)).check(matches(isDisplayed()));//new acttivity display layout check
 
     }
 }

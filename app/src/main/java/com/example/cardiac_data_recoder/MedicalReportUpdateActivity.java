@@ -63,7 +63,7 @@ public class MedicalReportUpdateActivity extends AppCompatActivity {
 
 
 
-
+       //date picker added
         date_picker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,6 +82,7 @@ public class MedicalReportUpdateActivity extends AppCompatActivity {
             }
         });
 
+        //Time picker added
         time_picker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -134,6 +135,10 @@ public class MedicalReportUpdateActivity extends AppCompatActivity {
         }
 
     }
+
+    /**
+     * This is used for update given data and given report
+     */
     public void updateReport(){
         String updatedDate = date_picker.getText().toString();
         String updatedTime = time_picker.getText().toString();

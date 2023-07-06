@@ -22,6 +22,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+/**
+ * This class is responsible for loginactivity
+ */
 public class loginactivity1 extends AppCompatActivity implements View.OnClickListener  {
 
 
@@ -94,14 +97,14 @@ public class loginactivity1 extends AppCompatActivity implements View.OnClickLis
 
         }
     }
-
+    //for sign upr redirection
     private void signuppage() {
 
         Toast.makeText(loginactivity1.this, "Redirecting to Sign Up Page", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(getApplicationContext(),RegisterActivity.class));
     }
 
-
+    //for forgetpass redirection
     private void forgotpass()
     {
         Toast.makeText(this, "Redirecting to Reset Password Page", Toast.LENGTH_SHORT).show();
@@ -109,12 +112,15 @@ public class loginactivity1 extends AppCompatActivity implements View.OnClickLis
 
     }
 
+    /**
+     * Login Functionality Check
+     */
     private void userlogin()
     {
         String email1=email.getText().toString().trim();
         String pass=password.getText().toString().trim();
 
-        if(email1.isEmpty())
+        if(email1.isEmpty())//email validation
         {
             email.setError("Please Enter Email Address");
             email.requestFocus();
@@ -139,6 +145,7 @@ public class loginactivity1 extends AppCompatActivity implements View.OnClickLis
 
         }
 
+        //matching with database
         mAuth.signInWithEmailAndPassword(email1,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {

@@ -26,6 +26,7 @@ public class RegisterActivity extends AppCompatActivity {
     TextView redirect;
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
@@ -55,7 +56,7 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
     }
-
+    //user check authentication
     private void createuser() {
 
         String email=email1.getText().toString().trim();
@@ -120,7 +121,7 @@ public class RegisterActivity extends AppCompatActivity {
                     if(task.getException()instanceof FirebaseAuthUserCollisionException)
                     {
                         Toast.makeText(RegisterActivity.this, "User is already Registered", Toast.LENGTH_SHORT).show();
-                        Intent intent=new Intent(getApplicationContext(),loginactivity1.class);
+                        Intent intent=new Intent(getApplicationContext(),loginactivity1.class);//intent activity
                         startActivity(intent);
                     }
                     else

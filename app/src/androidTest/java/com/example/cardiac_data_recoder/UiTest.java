@@ -28,6 +28,10 @@ public class UiTest {
 
 
     @Test
+    /**
+     * This is a splash scrren UI Test
+     * This method is used to check splash screen
+     */
     public void splash() {
 
 
