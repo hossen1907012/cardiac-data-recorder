@@ -31,6 +31,19 @@
             </AndroidTestResultsTableState>
           </value>
         </entry>
+        <entry key="-1501300962">
+          <value>
+            <AndroidTestResultsTableState>
+              <option name="preferredColumnWidths">
+                <map>
+                  <entry key="Duration" value="90" />
+                  <entry key="Nothing&#10; A063" value="120" />
+                  <entry key="Tests" value="360" />
+                </map>
+              </option>
+            </AndroidTestResultsTableState>
+          </value>
+        </entry>
         <entry key="-151373074">
           <value>
             <AndroidTestResultsTableState>
@@ -72,6 +85,20 @@
             </AndroidTestResultsTableState>
           </value>
         </entry>
+        <entry key="206222290">
+          <value>
+            <AndroidTestResultsTableState>
+              <option name="preferredColumnWidths">
+                <map>
+                  <entry key="Duration" value="90" />
+                  <entry key="Nothing&#10; A063" value="120" />
+                  <entry key="P2229S002979" value="120" />
+                  <entry key="Tests" value="360" />
+                </map>
+              </option>
+            </AndroidTestResultsTableState>
+          </value>
+        </entry>
         <entry key="354210516">
           <value>
             <AndroidTestResultsTableState>
@@ -79,6 +106,20 @@
                 <map>
                   <entry key="Duration" value="90" />
                   <entry key="Pixel_6_API_30" value="120" />
+                  <entry key="Tests" value="360" />
+                </map>
+              </option>
+            </AndroidTestResultsTableState>
+          </value>
+        </entry>
+        <entry key="1253405404">
+          <value>
+            <AndroidTestResultsTableState>
+              <option name="preferredColumnWidths">
+                <map>
+                  <entry key="Duration" value="90" />
+                  <entry key="Nothing&#10; A063" value="120" />
+                  <entry key="P2229S002979" value="120" />
                   <entry key="Tests" value="360" />
                 </map>
               </option>
